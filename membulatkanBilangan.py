@@ -63,15 +63,15 @@ def pembulatan(bilangan):
     return hasil_pembulatan
 
 #contoh penggunaan
-a = 12.445467
-print(f'Hasil pembulatan dari {a} adalah {limaAngkaDibelakangKoma(a)}')
-a = limaAngkaDibelakangKoma(a)
-print(f'Hasil pembulatan dari {a} adalah {empatAngkaDibelakangKoma(a)}')
-a = empatAngkaDibelakangKoma(a)
-print(f'Hasil pembulatan dari {a} adalah {tigaAngkaDibelakangKoma(a)}')
-a = tigaAngkaDibelakangKoma(a)
-print(f'Hasil pembulatan dari {a} adalah {duaAngkaDibelakangKoma(a)}')
-a = duaAngkaDibelakangKoma(a)
-print(f'Hasil pembulatan dari {a} adalah {satuAngkaDibelakangKoma(a)}')
-a = satuAngkaDibelakangKoma(a)
-print(f'Hasil pembulatan dari {a} adalah {pembulatan(a)}')
+# a = 12.445467
+# print(f'Hasil pembulatan dari {a} adalah {limaAngkaDibelakangKoma(a)}')
+# a = limaAngkaDibelakangKoma(a)
+# print(f'Hasil pembulatan dari {a} adalah {empatAngkaDibelakangKoma(a)}')
+# a = empatAngkaDibelakangKoma(a)
+# print(f'Hasil pembulatan dari {a} adalah {tigaAngkaDibelakangKoma(a)}')
+# a = tigaAngkaDibelakangKoma(a)
+# print(f'Hasil pembulatan dari {a} adalah {duaAngkaDibelakangKoma(a)}')
+# a = duaAngkaDibelakangKoma(a)
+# print(f'Hasil pembulatan dari {a} adalah {satuAngkaDibelakangKoma(a)}')
+# a = satuAngkaDibelakangKoma(a)
+# print(f'Hasil pembulatan dari {a} adalah {pembulatan(a)}')
