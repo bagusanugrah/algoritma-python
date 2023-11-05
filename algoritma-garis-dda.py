@@ -1,4 +1,5 @@
-import math
+import membulatkanBilangan as blt
+#library membulatkanBilangan bisa didapat di https://github.com/bagusanugrah/algoritma-python/blob/main/membulatkanBilangan.py
 
 def mutlak(bilangan):
     bilangan_mutlak = bilangan
@@ -8,17 +9,6 @@ def mutlak(bilangan):
         pass
 
     return bilangan_mutlak
-
-def pembulatan(bilangan):
-    hasil_pembulatan = math.floor(bilangan)
-    if (bilangan-0.5) >= int(bilangan):
-        hasil_pembulatan = math.ceil(bilangan)
-    else:
-        pass
-    
-    return hasil_pembulatan
-
-
 
 x0 = int(input('x0: '))
 y0 = int(input('y0: '))
@@ -31,10 +21,10 @@ yasli = []
 x = []
 y = []
 
-xasli.append(x0)
-yasli.append(y0)
-x.append(pembulatan(xasli[0]))
-y.append(pembulatan(yasli[0]))
+xasli.append(blt.duaAngkaDibelakangKoma(x0))
+yasli.append(blt.duaAngkaDibelakangKoma(y0))
+x.append(blt.pembulatan(xasli[0]))
+y.append(blt.pembulatan(yasli[0]))
 
 dx = x1-x0
 dy = y1-y0
@@ -48,18 +38,18 @@ print('k      x        y      round(x),round(y)')
 print(f'                            ({x[0]},{y[0]})')
 xr = dx/r
 yr = dy/r
-xasli.append(xasli[0]+xr)
-yasli.append(yasli[0]+yr)
-x.append(pembulatan(xasli[1]))
-y.append(pembulatan(yasli[1]))
+xasli.append(blt.duaAngkaDibelakangKoma(xasli[0]+xr))
+yasli.append(blt.duaAngkaDibelakangKoma(yasli[0]+yr))
+x.append(blt.pembulatan(xasli[1]))
+y.append(blt.pembulatan(yasli[1]))
 print(f'0    {(xasli[1]):.2f}    {(yasli[1]):.2f}         ({x[1]},{y[1]})')
 
 index = 1
 while (xasli[index] != x1) and yasli[index] != y1:
-    xasli.append(xasli[index]+xr)
-    yasli.append(yasli[index]+yr)
-    x.append(pembulatan(xasli[index+1]))
-    y.append(pembulatan(yasli[index+1]))
+    xasli.append(blt.duaAngkaDibelakangKoma(xasli[index]+xr))
+    yasli.append(blt.duaAngkaDibelakangKoma(yasli[index]+yr))
+    x.append(blt.pembulatan(xasli[index+1]))
+    y.append(blt.pembulatan(yasli[index+1]))
     print(f'{index}    {(xasli[index+1]):.2f}    {(yasli[index+1]):.2f}         ({x[index+1]},{y[index+1]})')
 
     index += 1
