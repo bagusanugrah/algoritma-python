@@ -45,7 +45,7 @@ else:
     r = mutlak(dy)
 
 print('k      x        y      round(x),round(y)')
-print(f'                            ({pembulatan(x[0])},{pembulatan(y[0])})')
+print(f'                            ({x[0]},{y[0]})')
 xr = dx/r
 yr = dy/r
 xasli.append(xasli[0]+xr)
