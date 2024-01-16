@@ -26,4 +26,4 @@ def post(email: str, password: str):
 def get():
     return data_user
 
-#jalankan dengan uvicorn fastapi:app --host 0.0.0.0 --port 8000
+#jalankan dengan uvicorn main:app --host 0.0.0.0 --port 8000
